@@ -486,7 +486,7 @@ else if (day == 2){
 
         let tap = readlineSync.question("Type : ")
 
-        if (tap.toLowerCase() == "Tap"){
+        if (tap.toLowerCase() == "tap"){
             
             while (true){
                 console.log(
@@ -528,7 +528,7 @@ else if (day == 2){
                             amount += 10;
                             console.log(
                                 "You have choosen 'Hara-Bhara-Kabab' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Hara-Bhara-Kabab'\n"
                             );
                             
                         }else if (starter == 3){
@@ -536,7 +536,7 @@ else if (day == 2){
                             amount += 25;
                             console.log(
                                 "You have choosen 'Pakoda'\n",
-                                "Here is your order\n"
+                                "Here is your order : 'Pakoda'\n"
                             );
                             
                         }
@@ -545,7 +545,7 @@ else if (day == 2){
                             amount += 30;
                             console.log(
                                 "You have choosen 'Aloo tikki' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Aloo tikki'\n"
                             );
                         }
                         else if (starter == 5){
@@ -553,7 +553,7 @@ else if (day == 2){
                             amount += 50;
                             console.log(
                                 "You have choosen 'Pani-Puri' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Pani-Puri'\n"
                             );
                         }
                         else {
@@ -630,7 +630,7 @@ else if (day == 2){
                             amount1 += 60;
                             console. log(
                                 "You have selected 'Palak-Paneer' \n",
-                                "Here is your order : 'Rajma' \n"
+                                "Here is your order : 'Palak-Paneer' \n"
                             );
                         }
                         else if (main == 6){
@@ -912,7 +912,7 @@ else if (day == 2){
             totalBill = totalAmount+totalAmount1+totalAmount2+totalAmount3+totalAmount4;
             console.log(
                 `
-                Total Bill : ${totalBill}
+                Total Bill : ${totalBill}Rs. 
                 "Thanks for coming - come Again"
                 `
             );
@@ -971,7 +971,7 @@ else if (day == 3){
                             amount += 20;
                             console.log(
                                 "You have choosen 'Bhel-Puri' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Bhel-Puri'\n"
                             );
                             
                         }
@@ -980,7 +980,7 @@ else if (day == 3){
                             amount += 10;
                             console.log(
                                 "You have choosen 'Samosa' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Samosa' \n"
                             );
                             
                         }else if (starter == 3){
@@ -988,7 +988,7 @@ else if (day == 3){
                             amount += 25;
                             console.log(
                                 "You have choosen 'Aloo-Chaat'\n",
-                                "Here is your order\n"
+                                "Here is your order : 'Aloo-Chaat'\n"
                             );
                             
                         }
@@ -997,7 +997,7 @@ else if (day == 3){
                             amount += 30;
                             console.log(
                                 "You have choosen 'Papdi-Chaat' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Papdi-Chaat'\n"
                             );
                         }
                         else if (starter == 5){
@@ -1005,7 +1005,7 @@ else if (day == 3){
                             amount += 50;
                             console.log(
                                 "You have choosen 'Paneer tikka' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Paneer tikka'\n"
                             );
                         }
                         else {
@@ -1071,7 +1071,7 @@ else if (day == 3){
                         }
                         else if (main == 4){
 
-                            amount += 120;
+                            amount1 += 120;
                             console.log(
                                 "You have selected 'Malai-Chaap'\n",
                                 "Here is your order : 'Malai-Chaap' \n"
@@ -1110,6 +1110,11 @@ else if (day == 3){
                             break;
                         }
                     }
+                    console.log(
+                        `
+                        You have ordered your main-course of @${totalAmount1}Rs. 
+                        `
+                    )
                 }
                 else if (count == 3){
 
@@ -1352,15 +1357,16 @@ else if (day == 3){
                     break;
                 }
                 
-                totalBill = totalAmount+totalAmount1+totalAmount2+totalAmount3+totalAmount4;
-                console.log(
-                    `
-                    Total Bill : ${totalBill}
-                    "Thanks for coming - come Again"
-                    `
-                );
-                break;
             }
+            
+            totalBill = totalAmount+totalAmount1+totalAmount2+totalAmount3+totalAmount4;
+            console.log(
+                `
+                Total Bill : ${totalBill}Rs.
+                "Thanks for coming - come Again"
+                `
+            );
+            break;
         }
         else {
             console.log("Please enter 'Tap' to see the 'Menu-Card' \n");
@@ -1382,7 +1388,7 @@ else if (day == 4){
     while (true) {
         let tap = readlineSync.question("Type : ")
 
-        if (tap.toLowerCase() == "Tap"){
+        if (tap.toLowerCase() == "tap"){
 
             while (true) {
                 console.log(
@@ -1415,7 +1421,7 @@ else if (day == 4){
                             amount += 20;
                             console.log(
                                 "You have choosen 'Snacks' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Snacks'\n"
                             );
                             
                         }
@@ -1424,7 +1430,7 @@ else if (day == 4){
                             amount += 10;
                             console.log(
                                 "You have choosen 'Vada-Pav' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Vada-Pav'\n"
                             );
                             
                         }else if (starter == 3){
@@ -1432,7 +1438,7 @@ else if (day == 4){
                             amount += 25;
                             console.log(
                                 "You have choosen 'Pakoda'\n",
-                                "Here is your order\n"
+                                "Here is your order : 'Pakoda'\n"
                             );
                             
                         }
@@ -1441,7 +1447,7 @@ else if (day == 4){
                             amount += 30;
                             console.log(
                                 "You have choosen 'Pav-Bhaji' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Pav-Bhaji'\n"
                             );
                         }
                         else if (starter == 5){
@@ -1449,7 +1455,7 @@ else if (day == 4){
                             amount += 50;
                             console.log(
                                 "You have choosen 'Kathi-Rolls' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Kathi-Rolls'\n"
                             );
                         }
                         else {
@@ -1803,7 +1809,7 @@ else if (day == 4){
             totalBill = totalAmount+totalAmount1+totalAmount2+totalAmount3+totalAmount4;
             console.log(
                 `
-                Total Bill : ${totalBill}
+                Total Bill : ${totalBill}Rs. 
                 "Thanks for coming - come Again"
                 `
             );
@@ -1819,15 +1825,19 @@ else if (day == 4){
 else if (day == 5){
 
     console.log(
-        "Thanks for choosing 'Monday'\n",
+        "Thanks for choosing 'Friday'\n",
         "\nHere is the Menu-Card : Type 'Tap' to open it\n"
     );
+
+    let amount = 0, amount1 = 0, amount2 = 0, amount3 = 0, amount4 = 0;
+    let totalAmount = 0, totalAmount1 = 0, totalAmount2 =0, totalAmount3 = 0, totalAmount4 = 0;
+    let totalBill = 0;
     
     while (true) {
 
         let tap = readlineSync.question("Type : ")
 
-        if (tap.toLowerCase() == "Tap"){
+        if (tap.toLowerCase() == "tap"){
 
             while (true) {
                 console.log(
@@ -1861,7 +1871,7 @@ else if (day == 5){
                             amount += 20;
                             console.log(
                                 "You have choosen 'Dhokla' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Dhokla'\n"
                             );
                             
                         }
@@ -1870,7 +1880,7 @@ else if (day == 5){
                             amount += 10;
                             console.log(
                                 "You have choosen 'Mirchi-Bhajji' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Mirchi-Bhajji'\n"
                             );
                             
                         }else if (starter == 3){
@@ -1878,7 +1888,7 @@ else if (day == 5){
                             amount += 25;
                             console.log(
                                 "You have choosen 'Paneer-Pakoda'\n",
-                                "Here is your order\n"
+                                "Here is your order 'Paneer-Pakoda'\n"
                             );
                             
                         }
@@ -1887,7 +1897,7 @@ else if (day == 5){
                             amount += 30;
                             console.log(
                                 "You have choosen 'Bhutte-Ke-Kabab' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Bhutte-Ke-Kabab'\n"
                             );
                         }
                         else if (starter == 5){
@@ -1895,7 +1905,7 @@ else if (day == 5){
                             amount += 50;
                             console.log(
                                 "You have choosen 'Paneer tikka' \n",
-                                "Here is your order\n"
+                                "Here is your order : 'Paneer tikka'\n"
                             );
                         }
                         else {
@@ -2040,7 +2050,7 @@ else if (day == 5){
                         }
                         else if (dessert == 3){
 
-                            amount += 40;
+                            amount2 += 40;
                             console. log(
                                 "You have selected 'Balushahi' \n",
                                 "Here is your order : 'Balushahi' \n"
@@ -2255,7 +2265,7 @@ else if (day == 5){
             totalBill = totalAmount+totalAmount1+totalAmount2+totalAmount3+totalAmount4;
             console.log(
                 `
-                Total Bill : ${totalBill}
+                Total Bill : ${totalBill}Rs. 
                 "Thanks for coming - come Again"
                 `
             );
@@ -2271,401 +2281,454 @@ else if (day == 5){
 else if (day == 6){
 
     console.log(
-        "Thanks for choosing 'Monday'\n",
+        "Thanks for choosing 'Saturday'\n",
         "\nHere is the Menu-Card : Type 'Tap' to open it\n"
     );
+
+    let amount = 0, amount1 = 0, amount2 = 0, amount3 = 0, amount4 = 0;
+    let totalAmount = 0, totalAmount1 = 0, totalAmount2 =0, totalAmount3 = 0, totalAmount4 = 0;
+    let totalBill = 0;
     
-    let tap = readlineSync.question("Type : ")
+    while (true) {
 
-    if (tap == "Tap" || tap == "tap" || tap == "TAP"){
+        let tap = readlineSync.question("Type : ")
 
-        console.log(
-            "Choose your Courses : \n",
-            "1. Starters or Appetizers\n",
-            "2. Main-Courses or Entrees\n",
-            "3. Dessert\n",
-            "4. Side dishes\n",
-            "5. Drinks\n"
-        );
+        if (tap.toLowerCase() == "tap"){
 
-        let count = readlineSync.question("Select the course according to the numbers : \n")
+            while (true) {
+                console.log(
+                    "Choose your Courses : \n",
+                    "1. Starters or Appetizers\n",
+                    "2. Main-Courses or Entrees\n",
+                    "3. Dessert\n",
+                    "4. Side dishes\n",
+                    "5. Drinks\n"
+                );
 
-        if (count == 1){
+                let count = readlineSync.question("Select the course according to the numbers : \n")
+
+                if (count == 1){
+
+                    while (true) {
+
+                        console.log(
+                            "\nHere are your dishes \n",
+                            "1. Sandwich  -  @20rs. Per Plate\n",
+                            "2. Raj-Kachori  -  @10rs. Per Plate\n",
+                            "3. Sev-Puri  -  @25rs. Per Plate\n",
+                            "4. Kachori  -  @30rs. Per Plate\n",
+                            "5. Ragda-Pattice  -  @50rs. Per Plate\n"
+                        );
+
+                        let starter = readlineSync.question("\nChoose your starter according to numbers : \n")
+
+                        if (starter == 1){
+
+                            amount += 20;
+                            console.log(
+                                "You have choosen 'Sandwich' \n",
+                                "Here is your order : 'Sandwich'\n"
+                            );
+                            
+                        }
+                        else if (starter == 2){
+
+                            amount += 10;
+                            console.log(
+                                "You have choosen 'Raj-Kachori' \n",
+                                "Here is your order : 'Raj-Kachori'\n"
+                            );
+                            
+                        }else if (starter == 3){
+
+                            amount += 25;
+                            console.log(
+                                "You have choosen 'Sev-Puri'\n",
+                                "Here is your order : 'Sev-Puri'\n"
+                            );
+                            
+                        }
+                        else if (starter == 4){
+
+                            amount += 30;
+                            console.log(
+                                "You have choosen 'Kachori' \n",
+                                "Here is your order : 'Kachori'\n"
+                            );
+                        }
+                        else if (starter == 5){
+
+                            amount += 50;
+                            console.log(
+                                "You have choosen 'Ragda-Pattice' \n",
+                                "Here is your order : 'Ragda-Pattice'\n"
+                            );
+                        }
+                        else {
+                            console.log(
+                                `You have entered a wrong number please enter a number according to your dishe\n`,
+                                `Now start it again!\n`
+                            );
+                            continue;
+                        }
+                        totalAmount = amount;
+                        totalBill = totalAmount;
+
+                        let orderAgain = readlineSync.question(`\nWould you like to order again (yes/no) : `)
+
+                        if (orderAgain.toLowerCase() === "no"){
+                            break;
+                        }
+                    }
+                    console.log(
+                        `
+                        You have ordered your starters of @${totalAmount}Rs. 
+                        `
+                    )
+                }
+                else if (count == 2){
+
+                    while (true) {
+                        console.log(
+                            "\nHere are some 'main-course' dishes choose from them : \n",
+                            "1. Aloo-Soya  -  @50rs. Per Plate\n",
+                            "2. Matar-Paneer  -  @80rs. Per Plate\n",
+                            "3. Chhole  -  @90rs. Per Plate\n",
+                            "4. Mix-Veg  -  @120rs. Per Plate\n",
+                            "5. Parval  -  @60rs. Per Plate\n",
+                            "6. Butter-Naan  -  @5rs. Per Roti\n"
+                        );
+
+                        let main = readlineSync.question("\nChoose your Main-course according to numbers : \n")
+
+                        if (main == 1){
+
+                            amount1 += 50;
+                            console.log(
+                                "You have selected 'Aloo-Soya'\n",
+                                "Here is your order : 'Aloo-Soya' \n"
+                            );
+                        }
+                        else if (main == 2){
+
+                            amount1 += 80;
+                            console.log(
+                                "You have selected 'Matar-Paneer'\n",
+                                "Here is your order : 'Matar-Paneer' \n"
+                            );
+                        }
+                        else if (main == 3){
+
+                            amount1 += 90;
+                            console.log(
+                                "You have selected 'Chhole'\n",
+                                "Here is your order : 'Chhole' \n"
+                            );
+                        }
+                        else if (main == 4){
+
+                            amount1 += 120;
+                            console.log(
+                                "You have selected 'Mix-Veg'\n",
+                                "Here is your order : 'Mix-Veg' \n"
+                            );
+                        }
+                        else if (main == 5){
+
+                            amount1 += 60;
+                            console. log(
+                                "You have selected 'Parval' \n",
+                                "Here is your order : 'Parval' \n"
+                            );
+                        }
+                        else if (main == 6){
+
+                            let roti = readlineSync.question(`How many "Butter-Naan" do you want : `)
+                            amount1 += roti * 5;
+                            console.log(
+                                "You have selected 'Butter-Naan'\n",
+                                `Here is your order : ${roti} 'Butter-Naan' \n`
+                            );
+                        }
+                        else {
+                            console.log(
+                                `You have entered a wrong number please enter a number according to your dishe\n`,
+                                `Now start it again!\n`
+                            );
+                            continue;
+                        }
+                        totalAmount1 = amount1;
+                        totalBill = totalAmount1;
+
+                        let orderAgain = readlineSync.question(`Would you like to order again (yes/no) : \n`)
+
+                        if (orderAgain.toLowerCase() === "no"){
+                            break;
+                        }
+                    }
+                    console.log(
+                        `
+                        You have ordered your main-course of @${totalAmount1}Rs. 
+                        `
+                    )
+                }
+                else if (count == 3){
+
+                    while (true) {
+                        console.log(
+                            "Here are some 'dessert' dishes choose from them : \n",
+                            "1. Petha  -  @30rs. Per Plate\n",
+                            "2. Soan-Papdi  -  @30rs. Per Plate\n",
+                            "3. Shrikhand  -  @40rs. Per Plate\n",
+                            "4. Basundi  -  @35rs. Per Plate\n",
+                            "5. Choco-Cake  -  @50rs. Per Plate\n"
+                        );
+
+                        let dessert = readlineSync.question("\nChoose your 'Dessert' according to numbers : \n")
+
+                        if (dessert == 1){
+
+                            amount2 += 30;
+                            console. log(
+                                "You have selected 'Petha' \n",
+                                "Here is your order : 'Petha' \n"
+                            );
+                        }
+                        else if (dessert == 2){
+
+                            amount2 += 30;
+                            console. log(
+                                "You have selected 'Saon-Papdi' \n",
+                                "Here is your order : 'Saon-Papdi' \n"
+                            );
+                        }
+                        else if (dessert == 3){
+
+                            amount2 += 40;
+                            console. log(
+                                "You have selected 'ShriKhand' \n",
+                                "Here is your order : 'ShriKhand' \n"
+                            );
+                        }
+                        else if (dessert == 4){
+
+                            amount2 += 35;
+                            console. log(
+                                "You have selected 'Basundi' \n",
+                                "Here is your order : 'Basundi' \n"
+                            );
+                        }
+                        else if (dessert == 5){
+
+                            amount2 += 50;
+                            console. log(
+                                "You have selected 'Choco-Cake' \n",
+                                "Here is your order : 'Choco-Cake' \n"
+                            );
+                        }
+                        else {
+                            console.log(
+                                `You have entered a wrong number please enter a number according to your dishe\n`,
+                                `Now start it again!\n`
+                            );
+                            continue;
+                        }
+                        totalAmount2 = amount2;
+                        totalBill = totalAmount2;
+
+                        let orderAgain = readlineSync.question(`Would you like to order again (yes/no) : \n`)
+
+                        if (orderAgain.toLowerCase() === "no"){
+                            break;
+                        }
+                    }
+                    console.log(
+                        `
+                        You have ordered your Dessert of @${totalAmount2}Rs. 
+                        `
+                    )
+                }
+                else if (count == 4){
+
+                    while (true) {
+
+                        console.log(
+                            "Here are some 'side-dishes' dishes choose from them : \n",
+                            "1. Special-Raita  -  @10rs. Per Plate\n",
+                            "2. Tomato-Chutney  -  @20rs. Per Plate\n",
+                            "3. Chana-Chaat  -  @10rs. Per Plate\n",
+                            "4. Carrot-Pickle  -  @20rs. Per Plate\n",
+                            "5. Lemon-Rice  -  @30rs. Per Plate\n"
+                        );
+
+                        let side = readlineSync.question("\nChoose your 'Side-dishes' according to numbers : \n")
+
+                        if (side == 1){
+                            
+                            amount3 += 10;
+                            console. log(
+                                "You have selected 'Special-Raita' \n",
+                                "Here is your order : 'Special-Raita' \n"
+                            );
+                        }
+                        else if (side == 2){
+
+                            amount3 += 20;
+                            console. log(
+                                "You have selected 'Tomato-Chutney' \n",
+                                "Here is your order : 'Tomato-Chutney' \n"
+                            );
+                        }
+                        else if (side == 3){
+
+                            amount3 += 10;
+                            console. log(
+                                "You have selected 'Chana-Chaat' \n",
+                                "Here is your order : 'Chana-Chaat' \n"
+                            );
+                        }
+                        else if (side == 4){
+
+                            amount3 += 20;
+                            console. log(
+                                "You have selected 'Carrot-Pickle' \n",
+                                "Here is your order : 'Carrot-Pickle' \n"
+                            );
+                        }
+                        else if (side == 5){
+
+                            amount3 += 30;
+                            console. log(
+                                "You have selected 'Lemon-Rice' \n",
+                                "Here is your order : 'Lemon-Rice' \n"
+                            );
+                        }
+                        else {
+                            console.log(
+                                `You have entered a wrong number please enter a number according to your dishe\n`,
+                                `Now start it again!\n`
+                            );
+                            continue;
+                        }
+                        totalAmount3 = amount3;
+                        totalBill = totalAmount3;
+
+                        let orderAgain = readlineSync.question(`Would you like to order again (yes/no) : \n`)
+
+                        if (orderAgain.toLowerCase() === "no"){
+                            break;
+                        }
+                    }
+                    console.log(
+                        `
+                        You have ordered your side-dishes of @${totalAmount3}Rs. 
+                        `
+                    )
+                }
+                else if (count == 5){
+
+                    while (true) {
+
+                        console.log(
+                            "Here are some drinks choose from them :\n",
+                            "1. Water  -  @30rs. Per Bottle\n",
+                            "2. Hot-Chocolate  -  @50rs. Per Bottle\n",
+                            "3. Infused-Water  -  @30rs. Per Bottle\n",
+                            "4. Iced-Tea  -  @20rs. Per Glass\n",
+                            "5. Milk-Shakes  -  @50rs. Per Glass"
+                        );
+
+                        let drinks = readlineSync.question("\nChoose your 'Drinks' according to numbers : \n")
+                        
+                        if (drinks == 1){
+
+                            amount4 += 30;
+                            console. log(
+                                "You have selected 'Water' \n",
+                                "Here is your order : 'Water' \n"
+                            );
+                        }
+                        else if (drinks == 2){
+
+                            amount4 += 50;
+                            console. log(
+                                "You have selected 'Hot-Chocolate' \n",
+                                "Here is your order : 'Hot-Chocolate' \n"
+                            );
+                        }
+                        else if (drinks == 3){
+
+                            amount4 += 30;
+                            console. log(
+                                "You have selected 'Infused-Water' \n",
+                                "Here is your order : 'Infused-Water' \n"
+                            );
+                        }
+                        else if (drinks == 4){
+
+                            amount4 += 20;
+                            console. log(
+                                "You have selected 'Iced-Tea' \n",
+                                "Here is your order : 'Iced-Tea' \n"
+                            );
+                        }
+                        else if (drinks == 5){
+
+                            amount4 += 50;
+                            console. log(
+                                "You have selected 'Milk-Shakes' \n",
+                                "Here is your order : 'Milk-Shakes' \n"
+                            );
+                        }
+                        else {
+                            console.log(
+                                `You have entered a wrong number please enter a number according to your dishe\n`,
+                                `Now start it again!\n`
+                            );
+                            continue;
+                        }
+                        totalAmount4 = amount4;
+                        totalBill = totalAmount4;
+
+                        let orderAgain = readlineSync.question(`Would you like to order again (yes/no) : \n`)
+
+                        if (orderAgain.toLowerCase() === "no"){
+                            break;
+                        }
+                    }
+                    console.log(
+                        `
+                        You have ordered your drinks of @${totalAmount4}Rs. 
+                        `
+                    )
+                }
+                else {
+                    console.log(
+                        "You've entered wrong number - Please select food according to the courses numbers\n",
+                        "Now start it again!\n"
+                    );
+                    continue;
+                }
+                let goBack = readlineSync.question(`\nWould you like to go for Main-course/Dessert/Side-Dishes/Drinks (yes/no) : `);
+
+                if (goBack.toLowerCase() === "no") {
+                    break;
+                }
+ 
+            }
+            totalBill = totalAmount+totalAmount1+totalAmount2+totalAmount3+totalAmount4;
             console.log(
-                "\nHere are your dishes \n",
-                "1. Sandwich  -  @20rs. Per Plate\n",
-                "2. Raj-Kachori  -  @10rs. Per Plate\n",
-                "3. Sev-Puri  -  @25rs. Per Plate\n",
-                "4. Kachori  -  @30rs. Per Plate\n",
-                "5. Ragda-Pattice  -  @50rs. Per Plate\n"
+                `
+                Total Bill : ${totalBill}Rs. 
+                "Thanks for coming - come Again"
+                `
             );
-
-            let starter = readlineSync.question("\nChoose your starter according to numbers : \n")
-            let amount = 0;
-
-            if (starter == 1){
-
-                amount += 20;
-                console.log(
-                    "You have choosen 'Sandwich' \n",
-                    "Here is your order\n",
-                    `You will have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-                
-            }
-            else if (starter == 2){
-
-                amount += 10;
-                console.log(
-                    "You have choosen 'Raj-Kachori' \n",
-                    "Here is your order\n",
-                    `You will have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-                
-            }else if (starter == 3){
-
-                amount += 25;
-                console.log(
-                    "You have choosen 'Sev-Puri'\n",
-                    "Here is your order\n",
-                    `You will have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-                
-            }
-            else if (starter == 4){
-
-                amount += 30;
-                console.log(
-                    "You have choosen 'Kachori' \n",
-                    "Here is your order\n",
-                    `You will have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (starter == 5){
-
-                amount += 50;
-                console.log(
-                    "You have choosen 'Ragda-Pattice' \n",
-                    "Here is your order\n",
-                    `You will have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else {
-                console.log(
-                    `You have entered a wrong number please enter a number according to your dishe\n`,
-                    `Now start it again!\n`
-                );
-            }
-        }
-        else if (count == 2){
-            console.log(
-                "\nHere are some 'main-course' dishes choose from them : \n",
-                "1. Aloo-Soya  -  @50rs. Per Plate\n",
-                "2. Matar-Paneer  -  @80rs. Per Plate\n",
-                "3. Chhole  -  @90rs. Per Plate\n",
-                "4. Mix-Veg  -  @120rs. Per Plate\n",
-                "5. Parval  -  @60rs. Per Plate\n",
-                "6. Butter-Naan  -  @5rs. Per Roti\n"
-            );
-
-            let main = readlineSync.question("\nChoose your Main-course according to numbers : \n")
-            let amount = 0;
-
-            if (main == 1){
-
-                amount += 50;
-                console.log(
-                    "You have selected 'Aloo-Soya'\n",
-                    "Here is your order : 'Aloo-Soya' \n",
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (main == 2){
-
-                amount += 80;
-                console.log(
-                    "You have selected 'Matar-Paneer'\n",
-                    "Here is your order : 'Matar-Paneer' \n",
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (main == 3){
-
-                amount += 90;
-                console.log(
-                    "You have selected 'Chhole'\n",
-                    "Here is your order : 'Chhole' \n",
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (main == 4){
-
-                amount += 120;
-                console.log(
-                    "You have selected 'Mix-Veg'\n",
-                    "Here is your order : 'Mix-Veg' \n",
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (main == 5){
-
-                amount += 60;
-                console. log(
-                    "You have selected 'Parval' \n",
-                    "Here is your order : 'Parval' \n",
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (main == 6){
-
-                let roti = readlineSync.question(`How many "Butter-Naan" do you want : `)
-                amount += roti * 5;
-                console.log(
-                    "You have selected 'Butter-Naan'\n",
-                    `Here is your order : ${roti} 'Butter-Naan' \n`,
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else {
-                console.log(
-                    `You have entered a wrong number please enter a number according to your dishe\n`,
-                    `Now start it again!\n`
-                );
-            }
-
-        }
-        else if (count == 3){
-            console.log(
-                "Here are some 'dessert' dishes choose from them : \n",
-                "1. Petha  -  @30rs. Per Plate\n",
-                "2. Soan-Papdi  -  @30rs. Per Plate\n",
-                "3. Shrikhand  -  @40rs. Per Plate\n",
-                "4. Basundi  -  @35rs. Per Plate\n",
-                "5. Choco-Cake  -  @50rs. Per Plate\n"
-            );
-
-            let dessert = readlineSync.question("\nChoose your 'Dessert' according to numbers : \n")
-            let amount = 0;
-
-            if (dessert == 1){
-
-                amount += 30;
-                console. log(
-                    "You have selected 'Petha' \n",
-                    "Here is your order : 'Petha' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (dessert == 2){
-
-                amount += 30;
-                console. log(
-                    "You have selected 'Saon-Papdi' \n",
-                    "Here is your order : 'Saon-Papdi' \n",
-                    `You have to @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (dessert == 3){
-
-                amount += 40;
-                console. log(
-                    "You have selected 'ShriKhand' \n",
-                    "Here is your order : 'ShriKhand' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (dessert == 4){
-
-                amount += 35;
-                console. log(
-                    "You have selected 'Basundi' \n",
-                    "Here is your order : 'Basundi' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (dessert == 5){
-
-                amount += 50;
-                console. log(
-                    "You have selected 'Choco-Cake' \n",
-                    "Here is your order : 'Choco-Cake' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else {
-                console.log(
-                    `You have entered a wrong number please enter a number according to your dishe\n`,
-                    `Now start it again!\n`
-                );
-            }
-
-        }
-        else if (count == 4){
-            console.log(
-                "Here are some 'side-dishes' dishes choose from them : \n",
-                "1. Special-Raita  -  @10rs. Per Plate\n",
-                "2. Tomato-Chutney  -  @20rs. Per Plate\n",
-                "3. Chana-Chaat  -  @10rs. Per Plate\n",
-                "4. Carrot-Pickle  -  @20rs. Per Plate\n",
-                "5. Lemon-Rice  -  @30rs. Per Plate\n"
-            );
-
-            let side = readlineSync.question("\nChoose your 'Side-dishes' according to numbers : \n")
-            let amount = 0;
-
-            if (side == 1){
-                
-                amount += 10;
-                console. log(
-                    "You have selected 'Special-Raita' \n",
-                    "Here is your order : 'Special-Raita' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (side == 2){
-
-                amount += 20;
-                console. log(
-                    "You have selected 'Tomato-Chutney' \n",
-                    "Here is your order : 'Tomato-Chutney' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (side == 3){
-
-                amount += 10;
-                console. log(
-                    "You have selected 'Chana-Chaat' \n",
-                    "Here is your order : 'Chana-Chaat' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (side == 4){
-
-                amount += 20;
-                console. log(
-                    "You have selected 'Carrot-Pickle' \n",
-                    "Here is your order : 'Carrot-Pickle' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (side == 5){
-
-                amount += 30;
-                console. log(
-                    "You have selected 'Lemon-Rice' \n",
-                    "Here is your order : 'Lemon-Rice' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else {
-                console.log(
-                    `You have entered a wrong number please enter a number according to your dishe\n`,
-                    `Now start it again!\n`
-                );
-            }
-        }
-        else if (count == 5){
-            console.log(
-                "Here are some drinks choose from them :\n",
-                "1. Water  -  @30rs. Per Bottle\n",
-                "2. Hot-Chocolate  -  @50rs. Per Bottle\n",
-                "3. Infused-Water  -  @30rs. Per Bottle\n",
-                "4. Iced-Tea  -  @20rs. Per Glass\n",
-                "5. Milk-Shakes  -  @50rs. Per Glass"
-            );
-
-            let drinks = readlineSync.question("\nChoose your 'Drinks' according to numbers : \n")
-            let amount = 0;
-            
-            if (drinks == 1){
-
-                amount += 30;
-                console. log(
-                    "You have selected 'Water' \n",
-                    "Here is your order : 'Water' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (drinks == 2){
-
-                amount += 50;
-                console. log(
-                    "You have selected 'Hot-Chocolate' \n",
-                    "Here is your order : 'Hot-Chocolate' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (drinks == 3){
-
-                amount += 30;
-                console. log(
-                    "You have selected 'Infused-Water' \n",
-                    "Here is your order : 'Infused-Water' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (drinks == 4){
-
-                amount += 20;
-                console. log(
-                    "You have selected 'Iced-Tea' \n",
-                    "Here is your order : 'Iced-Tea' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (drinks == 5){
-
-                amount += 50;
-                console. log(
-                    "You have selected 'Milk-Shakes' \n",
-                    "Here is your order : 'Milk-Shakes' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else {
-                console.log(
-                    `You have entered a wrong number please enter a number according to your dishe\n`,
-                    `Now start it again!\n`
-                );
-            }
+            break;
         }
         else {
-            console.log(
-                "You've entered wrong number - Please select food according to the courses numbers\n",
-                "Now start it again!\n"
-            );
+            console.log("Please enter 'Tap' to see the 'Menu-Card' \n");
+            continue;
         }
-
-    }
-    else {
-        console.log("Please enter 'Tap' to see the 'Menu-Card' \n");
     }
 }
 
@@ -2675,444 +2738,452 @@ else if (day == 7){
         "Thanks for choosing 'Sunday'\n",
         "\nHere is the Menu-Card : Type 'Tap' to open it\n"
     );
+
+    let amount = 0, amount1 = 0, amount2 = 0, amount3 = 0, amount4 = 0;
+    let totalAmount = 0, totalAmount1 = 0, totalAmount2 =0, totalAmount3 = 0, totalAmount4 = 0;
+    let totalBill = 0;
+
+    while (true) {
     
-    let tap = readlineSync.question("Type : ")
+        let tap = readlineSync.question("Type : ")
 
-    if (tap == "Tap" || tap == "tap" || tap == "TAP"){
-
-        console.log(
-            "Choose your Courses : \n",
-            "1. Starters or Appetizers\n",
-            "2. Main-Courses or Entrees\n",
-            "3. Dessert\n",
-            "4. Side dishes\n",
-            "5. Drinks\n"
-        );
-
-        let count = readlineSync.question("Select the course according to the numbers : \n")
-
-        if (count == 1){
-            
-
-            let totalAmount = 0; 
+        if (tap.toLowerCase() == "tap"){
 
             while (true) {
-
+                
                 console.log(
-                    "\nHere are your dishes \n",
-                    "1. Bombay-Sandwich  -  @20rs. Per Plate\n",
-                    "2. Chillie-Paneer  -  @10rs. Per Plate\n",
-                    "3. Dahi-Bade  -  @25rs. Per Plate\n",
-                    "4. Idli  -  @30rs. Per Plate\n",
-                    "5. Noodles  -  @50rs. Per Plate\n"
+                    "Choose your Courses : \n",
+                    "1. Starters or Appetizers\n",
+                    "2. Main-Courses or Entrees\n",
+                    "3. Dessert\n",
+                    "4. Side dishes\n",
+                    "5. Drinks\n"
                 );
 
-                let starter = readlineSync.question("\nChoose your starter according to numbers : \n")
-                let amount = 0;
+                let count = readlineSync.question("Select the course according to the numbers : \n")
 
-                if (starter == 1){
-
-                    amount += 20;
-                    console.log(
-                        "You have choosen 'Bombay-Sandwich' \n",
-                        "Here is your order\n",
-                        `You will have to pay @${amount}Rs. for this order\n`,
-                        "Thanks for coming - Please Come Again\n"
-                    );
+                if (count == 1){
                     
-                }
-                else if (starter == 2){
+                    while (true) {
 
-                    amount += 10;
+                        console.log(
+                            "\nHere are your dishes \n",
+                            "1. Bombay-Sandwich  -  @20rs. Per Plate\n",
+                            "2. Chillie-Paneer  -  @10rs. Per Plate\n",
+                            "3. Dahi-Bade  -  @25rs. Per Plate\n",
+                            "4. Idli  -  @30rs. Per Plate\n",
+                            "5. Noodles  -  @50rs. Per Plate\n"
+                        );
+
+                        let starter = readlineSync.question("\nChoose your starter according to numbers : \n")
+
+                        if (starter == 1){
+
+                            amount += 20;
+                            console.log(
+                                "You have choosen 'Bombay-Sandwich' \n",
+                                "Here is your order : 'Bombay-Sandwich'\n"
+                            );
+                            
+                        }
+                        else if (starter == 2){
+
+                            amount += 10;
+                            console.log(
+                                "You have choosen 'Chillie-Paneer' \n",
+                                "Here is your order : 'Chillie-Paneer'\n"
+                            );
+                            
+                        }else if (starter == 3){
+
+                            amount += 25;
+                            console.log(
+                                "You have choosen 'Dahi-Bade'\n",
+                                "Here is your order : 'Dahi-Bade'\n"
+                            );
+                            
+                        }
+                        else if (starter == 4){
+
+                            amount += 30;
+                            console.log(
+                                "You have choosen 'Idli' \n",
+                                "Here is your order : 'Idli'\n"
+                            );
+                        }
+                        else if (starter == 5){
+
+                            amount += 50;
+                            console.log(
+                                "You have choosen 'Noodles' \n",
+                                "Here is your order : 'Noodles'\n"
+                            );
+                        }
+                        else {
+                            console.log(
+                                `You have entered a wrong number please enter a number according to your dishe\n`,
+                                `Now start it again!\n`
+                            );
+                            continue; 
+                        }
+                        totalAmount = amount;
+                        totalBill = totalAmount;
+
+                        let orderAgain = readlineSync.question(`\nWould you like to order again (yes/no) : `)
+
+                        if (orderAgain.toLowerCase() === "no"){
+                            break;
+                        }
+                    }
                     console.log(
-                        "You have choosen 'Chillie-Paneer' \n",
-                        "Here is your order\n",
-                        `You will have to pay @${amount}Rs. for this order\n`,
-                        "Thanks for coming - Please Come Again\n"
-                    );
+                        `
+                        You have ordered your starters of @${totalAmount}Rs. 
+                        `
+                    )
+                }
+                else if (count == 2){
+
+                    while (true) {
+
+                        console.log(
+                            "\nHere are some 'main-course' dishes choose from them : \n",
+                            "1. Kadhai-Paneer  -  @50rs. Per Plate\n",
+                            "2. Chana-Masala  -  @80rs. Per Plate\n",
+                            "3. Mushroom  -  @90rs. Per Plate\n",
+                            "4. Malai-Chaap  -  @120rs. Per Plate\n",
+                            "5. Arvi  -  @60rs. Per Plate\n",
+                            "6. Butter-Naan  -  @5rs. Per Roti\n"
+                        );
+
+                        let main = readlineSync.question("\nChoose your Main-course according to numbers : \n")
+
+                        if (main == 1){
+
+                            amount1 += 50;
+                            console.log(
+                                "You have selected 'Kadhai-Paneer'\n",
+                                "Here is your order : 'Kadhai-Paneer' \n"
+                            );
+                        }
+                        else if (main == 2){
+
+                            amount1 += 80;
+                            console.log(
+                                "You have selected 'Chana-Masala'\n",
+                                "Here is your order : 'Chana-Masala' \n"
+                            );
+                        }
+                        else if (main == 3){
+
+                            amount1 += 90;
+                            console.log(
+                                "You have selected 'Mushroom'\n",
+                                "Here is your order : 'Mushroom' \n"
+                            );
+                        }
+                        else if (main == 4){
+
+                            amount1 += 120;
+                            console.log(
+                                "You have selected 'Malai-Chaap'\n",
+                                "Here is your order : 'Malai-Chaap' \n"
+                            );
+                        }
+                        else if (main == 5){
+
+                            amount1 += 60;
+                            console. log(
+                                "You have selected 'Arvi' \n",
+                                "Here is your order : 'Arvi' \n"
+                            );
+                        }
+                        else if (main == 6){
+
+                            let roti = readlineSync.question(`How many "Butter-Naan" do you want : `)
+                            amount1 += roti * 5;
+                            console.log(
+                                "You have selected 'Butter-Naan'\n",
+                                `Here is your order : ${roti} 'Butter-Naan' \n`
+                            );
+                        }
+                        else {
+                            console.log(
+                                `You have entered a wrong number please enter a number according to your dishe\n`,
+                                `Now start it again!\n`
+                            );
+                            continue;
+                        }
+                        totalAmount1 = amount1;
+                        totalBill = totalAmount1;
+
+                        let orderAgain = readlineSync.question(`Would you like to order again (yes/no) : \n`)
+
+                        if (orderAgain.toLowerCase() === "no"){
+                            break;
+                        }
+                    }
+                    console.log(
+                        `
+                        You have ordered your main-course of @${totalAmount1}Rs. 
+                        `
+                    )
+                }
+                else if (count == 3){
                     
-                }else if (starter == 3){
+                    while (true) {
+                        console.log(
+                            "Here are some 'dessert' dishes choose from them : \n",
+                            "1. Kesar-Peda  -  @30rs. Per Plate\n",
+                            "2. Kalakand  -  @30rs. Per Plate\n",
+                            "3. Bal-Mithai  -  @40rs. Per Plate\n",
+                            "4. Makhana-Kheer  -  @35rs. Per Plate\n",
+                            "5. Ghewar  -  @50rs. Per Plate\n"
+                        );
 
-                    amount += 25;
+                        let dessert = readlineSync.question("\nChoose your 'Dessert' according to numbers (1-5) : \n")
+                        
+                        if (dessert == 1){
+
+                            amount2 += 30;
+                            console. log(
+                                "You have selected 'Kesar-Peda' \n",
+                                "Here is your order : 'Kesar-Peda' \n"
+                            );
+                        }
+                        else if (dessert == 2){
+
+                            amount2 += 30;
+                            console. log(
+                                "You have selected 'Kalakand' \n",
+                                "Here is your order : 'Kalakand' \n"
+                            );
+                        }
+                        else if (dessert == 3){
+
+                            amount2 += 40;
+                            console. log(
+                                "You have selected 'Bal-Mithai' \n",
+                                "Here is your order : 'Bal-Mithai' \n"
+                            );
+                        }
+                        else if (dessert == 4){
+
+                            amount2 += 35;
+                            console. log(
+                                "You have selected 'Makhana-Kheer' \n",
+                                "Here is your order : 'Makhana-Kheer' \n"
+                            );
+                        }
+                        else if (dessert == 5){
+
+                            amount2 += 50;
+                            console. log(
+                                "You have selected 'Ghewar' \n",
+                                "Here is your order : 'Ghewar' \n"
+                            );
+                        }
+                        else {
+                            console.log(
+                                `You have entered a wrong number please enter a number according to your dishe\n`,
+                                `Now start it again!\n`
+                            );
+                            continue;
+                        }
+                        totalAmount2 = amount2;
+                        totalBill = totalAmount2;
+
+                        let orderAgain = readlineSync.question(`Would you like to order again (yes/no) : \n`)
+
+                        if (orderAgain.toLowerCase() === "no"){
+                            break;
+                        }
+                    }
                     console.log(
-                        "You have choosen 'Dahi-Bade'\n",
-                        "Here is your order\n",
-                        `You will have to pay @${amount}Rs. for this order\n`,
-                        "Thanks for coming - Please Come Again\n"
-                    );
-                    
+                        `
+                        You have ordered your Dessert of @${totalAmount2}Rs. 
+                        `
+                    )
                 }
-                else if (starter == 4){
+                else if (count == 4){
 
-                    amount += 30;
+                    while (true) {
+
+                        console.log(
+                            "Here are some 'side-dishes' dishes choose from them : \n",
+                            "1. Fruit-Raita  -  @10rs. Per Plate\n",
+                            "2. Dates-Tamarind-Chutney  -  @20rs. Per Plate\n",
+                            "3. Papad  -  @10rs. Per Plate\n",
+                            "4. Radish-Pickle  -  @20rs. Per Plate\n",
+                            "5. Steamed-Basamati-Rice  -  @30rs. Per Plate\n"
+                        );
+
+                        let side = readlineSync.question("\nChoose your 'Side-dishes' according to numbers : \n")
+
+                        if (side == 1){
+                            
+                            amount3 += 10;
+                            console. log(
+                                "You have selected 'Fruit-Raita' \n",
+                                "Here is your order : 'Fruit-Raita' \n"
+                            );
+                        }
+                        else if (side == 2){
+
+                            amount3 += 20;
+                            console. log(
+                                "You have selected 'Dates-Tamarind-Chutney' \n",
+                                "Here is your order : 'Dates-Tamarind-Chutney' \n"
+                            );
+                        }
+                        else if (side == 3){
+
+                            amount3 += 10;
+                            console. log(
+                                "You have selected 'Papad' \n",
+                                "Here is your order : 'Papad' \n"
+                            );
+                        }
+                        else if (side == 4){
+
+                            amount3 += 20;
+                            console. log(
+                                "You have selected 'Radish-Pickle' \n",
+                                "Here is your order : 'Radish-Pickle' \n"
+                            );
+                        }
+                        else if (side == 5){
+
+                            amount3 += 30;
+                            console. log(
+                                "You have selected 'Steamed-Basmati-Rice' \n",
+                                "Here is your order : 'Steamed-Basmati-Rice' \n"
+                            );
+                        }
+                        else {
+                            console.log(
+                                `You have entered a wrong number please enter a number according to your dishe\n`,
+                                `Now start it again!\n`
+                            );
+                            continue;
+                        }
+                        totalAmount3 = amount3;
+                        totalBill = totalAmount3;
+
+                        let orderAgain = readlineSync.question(`Would you like to order again (yes/no) : \n`)
+
+                        if (orderAgain.toLowerCase() === "no"){
+                            break;
+                        }
+                    }
                     console.log(
-                        "You have choosen 'Idli' \n",
-                        "Here is your order\n",
-                        `You will have to pay @${amount}Rs. for this order\n`,
-                        "Thanks for coming - Please Come Again\n"
-                    );
+                        `
+                        You have ordered your Dessert of @${totalAmount3}Rs. 
+                        `
+                    )
                 }
-                else if (starter == 5){
+                else if (count == 5){
 
-                    amount += 50;
+                    while (true) {
+
+                        console.log(
+                            "Here are some drinks choose from them :\n",
+                            "1. Water  -  @30rs. Per Bottle\n",
+                            "2. Falooda  -  @50rs. Per Bottle\n",
+                            "3. Matcha-Latte  -  @30rs. Per Bottle\n",
+                            "4. Apple-Cider  -  @20rs. Per Glass\n",
+                            "5. Tropical-Punch  -  @50rs. Per Glass"
+                        );
+
+                        let drinks = readlineSync.question("\nChoose your 'Drinks' according to numbers : \n")
+                        
+                        if (drinks == 1){
+
+                            amount4 += 30;
+                            console. log(
+                                "You have selected 'Water' \n",
+                                "Here is your order : 'Water' \n"
+                            );
+                        }
+                        else if (drinks == 2){
+
+                            amount4 += 50;
+                            console. log(
+                                "You have selected 'Falooda' \n",
+                                "Here is your order : 'Falooda' \n"
+                            );
+                        }
+                        else if (drinks == 3){
+
+                            amount4 += 30;
+                            console. log(
+                                "You have selected 'Matcha-Latte' \n",
+                                "Here is your order : 'Matcha-Latte' \n"
+                            );
+                        }
+                        else if (drinks == 4){
+
+                            amount4 += 20;
+                            console. log(
+                                "You have selected 'Apple-Cider' \n",
+                                "Here is your order : 'Apple-Cider' \n"
+                            );
+                        }
+                        else if (drinks == 5){
+
+                            amount4 += 50;
+                            console. log(
+                                "You have selected 'Tropical-Punch' \n",
+                                "Here is your order : 'Tropical-Punch' \n"
+                            );
+                        }
+                        else {
+                            console.log(
+                                `You have entered a wrong number please enter a number according to your dishe\n`,
+                                `Now start it again!\n`
+                            );
+                            continue;
+                        }
+                        totalAmount4 = amount4;
+                        totalBill = totalAmount4;
+
+                        let orderAgain = readlineSync.question(`Would you like to order again (yes/no) : \n`)
+
+                        if (orderAgain.toLowerCase() === "no"){
+                            break;
+                        }
+                    }
                     console.log(
-                        "You have choosen 'Noodles' \n",
-                        "Here is your order\n",
-                        `You will have to pay @${amount}Rs. for this order\n`,
-                        "Thanks for coming - Please Come Again\n"
-                    );
+                        `
+                        You have ordered your drinks of @${totalAmount4}Rs. 
+                        `
+                    )
                 }
                 else {
                     console.log(
-                        `You have entered a wrong number please enter a number according to your dishe\n`,
-                        `Now start it again!\n`
+                        "You've entered wrong number - Please select food according to the courses numbers\n",
+                        "Now start it again!\n"
                     );
-                    continue; 
+                    continue;
                 }
-                totalAmount += amount;
+                let goBack = readlineSync.question(`\nWould you like to go for Main-course/Dessert/Side-Dishes/Drinks (yes/no) : `);
 
-                let orderAgain = readlineSync.question(`Would you like to order again (yes/no) : \n`)
-
-                if (orderAgain === "no" || orderAgain === "No" || orderAgain === "NO"){
+                if (goBack.toLowerCase() === "no") {
                     break;
                 }
             }
-            console.log(
-                `
-                You have to pay @${totalAmount}Rs. 
-                Thanks for coming - Come Again
-                `
-            )
-        }
-        else if (count == 2){
-            console.log(
-                "\nHere are some 'main-course' dishes choose from them : \n",
-                "1. Kadhai-Paneer  -  @50rs. Per Plate\n",
-                "2. Chana-Masala  -  @80rs. Per Plate\n",
-                "3. Mushroom  -  @90rs. Per Plate\n",
-                "4. Malai-Chaap  -  @120rs. Per Plate\n",
-                "5. Arvi  -  @60rs. Per Plate\n",
-                "6. Butter-Naan  -  @5rs. Per Roti\n"
-            );
-
-            let main = readlineSync.question("\nChoose your Main-course according to numbers : \n")
-            let amount = 0;
-
-            if (main == 1){
-
-                amount += 50;
-                console.log(
-                    "You have selected 'Kadhai-Paneer'\n",
-                    "Here is your order : 'Kadhai-Paneer' \n",
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (main == 2){
-
-                amount += 80;
-                console.log(
-                    "You have selected 'Chana-Masala'\n",
-                    "Here is your order : 'Chana-Masala' \n",
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (main == 3){
-
-                amount += 90;
-                console.log(
-                    "You have selected 'Mushroom'\n",
-                    "Here is your order : 'Mushroom' \n",
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (main == 4){
-
-                amount += 120;
-                console.log(
-                    "You have selected 'Malai-Chaap'\n",
-                    "Here is your order : 'Malai-Chaap' \n",
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (main == 5){
-
-                amount += 60;
-                console. log(
-                    "You have selected 'Arvi' \n",
-                    "Here is your order : 'Arvi' \n",
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (main == 6){
-
-                let roti = readlineSync.question(`How many "Butter-Naan" do you want : `)
-                amount += roti * 5;
-                console.log(
-                    "You have selected 'Butter-Naan'\n",
-                    `Here is your order : ${roti} 'Butter-Naan' \n`,
-                    `You have to pay ${amount} for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else {
-                console.log(
-                    `You have entered a wrong number please enter a number according to your dishe\n`,
-                    `Now start it again!\n`
-                );
-            }
-
-        }
-        else if (count == 3){
-            console.log(
-                "Here are some 'dessert' dishes choose from them : \n",
-                "1. Kesar-Peda  -  @30rs. Per Plate\n",
-                "2. Kalakand  -  @30rs. Per Plate\n",
-                "3. Bal-Mithai  -  @40rs. Per Plate\n",
-                "4. Makhana-Kheer  -  @35rs. Per Plate\n",
-                "5. Ghewar  -  @50rs. Per Plate\n"
-            );
-
-            let totalAmount = 0; 
-            while (true) {
-
-                let dessert = readlineSync.question("\nChoose your 'Dessert' according to numbers (1-5) : \n")
-                let amount = 0;
-                
-                if (dessert == 1){
-
-                    amount += 30;
-                    console. log(
-                        "You have selected 'Kesar-Peda' \n",
-                        "Here is your order : 'Kesar-Peda' \n",
-                        `You have to pay @${amount}Rs. for this order\n`,
-                        "Thanks for coming - Please Come Again\n"
-                    );
-                }
-                else if (dessert == 2){
-
-                    amount += 30;
-                    console. log(
-                        "You have selected 'Kalakand' \n",
-                        "Here is your order : 'Kalakand' \n",
-                        `You have to @${amount}Rs. for this order\n`,
-                        "Thanks for coming - Please Come Again\n"
-                    );
-                }
-                else if (dessert == 3){
-
-                    amount += 40;
-                    console. log(
-                        "You have selected 'Bal-Mithai' \n",
-                        "Here is your order : 'Bal-Mithai' \n",
-                        `You have to pay @${amount}Rs. for this order\n`,
-                        "Thanks for coming - Please Come Again\n"
-                    );
-                }
-                else if (dessert == 4){
-
-                    amount += 35;
-                    console. log(
-                        "You have selected 'Makhana-Kheer' \n",
-                        "Here is your order : 'Makhana-Kheer' \n",
-                        `You have to pay @${amount}Rs. for this order\n`,
-                        "Thanks for coming - Please Come Again\n"
-                    );
-                }
-                else if (dessert == 5){
-
-                    amount += 50;
-                    console. log(
-                        "You have selected 'Ghewar' \n",
-                        "Here is your order : 'Ghewar' \n",
-                        `You have to pay @${amount}Rs. for this order\n`,
-                        "Thanks for coming - Please Come Again\n"
-                    );
-                }
-                else {
-                    console.log(
-                        `You have entered a wrong number please enter a number according to your dishe\n`,
-                        `Now start it again!\n`
-                    );
-                    continue;    // This will restart the when the input is incorrect. 
-
-                }
-                totalAmount += amount;
-
-                let orderAgain = readlineSync.question(`Would you like to order again (yes/no) : \n`)
-
-                if (orderAgain === "no" || orderAgain === "No" || orderAgain === "NO"){
-                    break;
-                }
-            }
-            console.log(
-                `
-                You have to pay @${totalAmount}Rs. 
-                Thanks for coming - Come Again
-                `
-            )
-
-        }
-        else if (count == 4){
-            console.log(
-                "Here are some 'side-dishes' dishes choose from them : \n",
-                "1. Fruit-Raita  -  @10rs. Per Plate\n",
-                "2. Dates-Tamarind-Chutney  -  @20rs. Per Plate\n",
-                "3. Papad  -  @10rs. Per Plate\n",
-                "4. Radish-Pickle  -  @20rs. Per Plate\n",
-                "5. Steamed-Basamati-Rice  -  @30rs. Per Plate\n"
-            );
-
-            let side = readlineSync.question("\nChoose your 'Side-dishes' according to numbers : \n")
-            let amount = 0;
-
-            if (side == 1){
-                
-                amount += 10;
-                console. log(
-                    "You have selected 'Fruit-Raita' \n",
-                    "Here is your order : 'Fruit-Raita' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (side == 2){
-
-                amount += 20;
-                console. log(
-                    "You have selected 'Dates-Tamarind-Chutney' \n",
-                    "Here is your order : 'Dates-Tamarind-Chutney' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (side == 3){
-
-                amount += 10;
-                console. log(
-                    "You have selected 'Papad' \n",
-                    "Here is your order : 'Papad' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (side == 4){
-
-                amount += 20;
-                console. log(
-                    "You have selected 'Radish-Pickle' \n",
-                    "Here is your order : 'Radish-Pickle' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (side == 5){
-
-                amount += 30;
-                console. log(
-                    "You have selected 'Steamed-Basmati-Rice' \n",
-                    "Here is your order : 'Steamed-Basmati-Rice' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else {
-                console.log(
-                    `You have entered a wrong number please enter a number according to your dishe\n`,
-                    `Now start it again!\n`
-                );
-            }
-        }
-        else if (count == 5){
-            console.log(
-                "Here are some drinks choose from them :\n",
-                "1. Water  -  @30rs. Per Bottle\n",
-                "2. Falooda  -  @50rs. Per Bottle\n",
-                "3. Matcha-Latte  -  @30rs. Per Bottle\n",
-                "4. Apple-Cider  -  @20rs. Per Glass\n",
-                "5. Tropical-Punch  -  @50rs. Per Glass"
-            );
-
-            let drinks = readlineSync.question("\nChoose your 'Drinks' according to numbers : \n")
-            let amount = 0;
             
-            if (drinks == 1){
-
-                amount += 30;
-                console. log(
-                    "You have selected 'Water' \n",
-                    "Here is your order : 'Water' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (drinks == 2){
-
-                amount += 50;
-                console. log(
-                    "You have selected 'Falooda' \n",
-                    "Here is your order : 'Falooda' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (drinks == 3){
-
-                amount += 30;
-                console. log(
-                    "You have selected 'Matcha-Latte' \n",
-                    "Here is your order : 'Matcha-Latte' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (drinks == 4){
-
-                amount += 20;
-                console. log(
-                    "You have selected 'Apple-Cider' \n",
-                    "Here is your order : 'Apple-Cider' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else if (drinks == 5){
-
-                amount += 50;
-                console. log(
-                    "You have selected 'Tropical-Punch' \n",
-                    "Here is your order : 'Tropical-Punch' \n",
-                    `You have to pay @${amount}Rs. for this order\n`,
-                    "Thanks for coming - Please Come Again\n"
-                );
-            }
-            else {
-                console.log(
-                    `You have entered a wrong number please enter a number according to your dishe\n`,
-                    `Now start it again!\n`
-                );
-            }
+            totalBill = totalAmount+totalAmount1+totalAmount2+totalAmount3+totalAmount4;
+            console.log(
+                `
+                Total Bill : ${totalBill}Rs.
+                "Thanks for coming - come Again"
+                `
+            );
+            break;
         }
         else {
-            console.log(
-                "You've entered wrong number - Please select food according to the courses numbers\n",
-                "Now start it again!\n"
-            );
+            console.log("Please enter 'Tap' to see the 'Menu-Card' \n");
+            continue;
         }
-
     }
-    else {
-        console.log("Please enter 'Tap' to see the 'Menu-Card' \n");
-    }
-}
-
-else {
-    console.log(
-        `\nYou have entered a wrong number - Please select days according to their numbers
-Now start it again\n`
-    );
 }
